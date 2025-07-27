@@ -129,7 +129,7 @@ export const projectsData = {
             title: "Boarding House",
             slug: "boarding-house",
             category: "Freelance Project",
-            description: "A freelance project focused on the design and planning of a modern boarding house.",
+            description: "This is a 2-story boarding house project that was designed on a 380 m2 of land. This boarding house consists 24 bedrooms with mezzanine and parking area for cars and motorcycles.\n\nThis building adapts industrial tropical concept, dominated by exposed brick arranged in a rhythmic pattern, giving the structure a solid yet aesthetically pleasing appearance. The building mass is symmetrically composed, with vertical elements and large glass openings at the center that allow for optimal natural lighting into the interior spaces. The black-framed windows emphasize the industrial aesthetic and harmonize with the exposed brick walls that frame them.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607789/PERSPEKTIF_EKSTERIOR_FIX_uaa8ei.png",
             hint: "modern apartment building",
             status: "On Construction",
@@ -145,7 +145,7 @@ export const projectsData = {
             title: "House Facade Renovation",
             slug: "house-facade-renovation",
             category: "Freelance Project",
-            description: "A freelance project involving the renovation and modernization of a house facade.",
+            description: "This is a project of house’s facade renovation located in Kelapa Dua, Tangerang Regency. The renovation consists of replacing roof design and the front facade. \n\nThe design of the renovation gives more neutral and calm appearance. Overall, the design is dominated by wood materials and shades of grey that complement each other. It is equipped with ventilation blocks for airflow and wooden-patterned louver panels as sunshading.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608035/Render_Fasad_fix_cropped_pgiczb.png",
             hint: "house facade modern",
             status: "Finished",
@@ -159,7 +159,7 @@ export const projectsData = {
             title: "House Renovation",
             slug: "house-renovation",
             category: "Freelance Project",
-            description: "A comprehensive freelance renovation project for a residential house.",
+            description: "The purpose of this project is to design a 99 m2 square private carport to a single-story house with 3 bedrooms. This house adopts a modern contemporary concept, emphasizing clean lines and a dynamic composition of geometric forms. The asymmetrical sloped roof becomes the main visual element, reinforcing the overall character of the design, also giving the high ceiling to give the impression of a spacious  room. \n\nThe front façade combines two primary materials: natural stone and neutral white wall paint. Natural stone is prominently applied on the right side and around the entrance area, giving the house a solid yet warm impression. Meanwhile, the ceiling and roof trim feature dark wood accents, creating a harmonious contrast and enhancing the natural aesthetic.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608415/RENDER_TAMPAK_DEPAN_dg3qmi.png",
             hint: "interior design living room",
             gallery: [
@@ -170,7 +170,7 @@ export const projectsData = {
             title: "Japandi House Interior",
             slug: "japandi-house-interior",
             category: "Interior and Furniture Design | Academic",
-            description: "An academic project exploring Japandi design principles for a house interior, focusing on minimalism and natural elements.",
+            description: "The purpose of this project is to design the interior of the 3-story+basement built house located in Dago, Bandung. Japandi style was chosen to provide a natural, clean, and simple appearance that give homey atmosphere.\n\nNatural materials are used by incorporating wood, which is a characteristic feature of the Japandi style. In addition, green plants provide visual balance to the space. The natural colors of the wood and plants create a warm and calming impression.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608505/R._KELUARGA_JAPANDI_ru8yzm.png",
             hint: "minimalist interior design",
             gallery: [
@@ -190,7 +190,7 @@ export const projectsData = {
             title: "Educational Building of Special Needs School",
             slug: "educational-building-of-special-needs-school",
             category: "Architectural Design Studio IV | Academic",
-            description: "An academic project for a Type D special needs school, focusing on accessible and inclusive architectural design.",
+            description: "This educational building is the part of special needs school type D (physically disabled) named Sekolah Luar Biasa-D (SLB-D) Kembangdiri.  Located on Ir. H. Juanda St., Coblong, Bandung, this school accomodates the rights of the physically disabled students to gain knowledge at school just like the ordinary students.  SLB-D Kembangdiri consists three educational levels, which are elementary school, junior high school, and senior high school. All those three educational levels are accomodated in this 3-story educational building.\n\nSLB-D Kembangdiri adopts a smart-therapeutic concept, which combined the concept of smart building and therapeutic architecture, with futuristic style.\n\nThis concept supports the needs of the physically disabled students to do their daily activities comfortably and safely. The smart building concept helps them achieve good accessibility and mobility with the support of Building Automation System (BAS). Meanwhile, the therapeutic architecture concept helps them feel accepted, understood, and given positive energies that could build positive changes to the students.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608170/Enscape_2024-01-02-16-04-40_tlpufd.png",
             hint: "modern school building",
             gallery: [
@@ -205,7 +205,7 @@ export const projectsData = {
             title: "Gedong Sawala Nusantara",
             slug: "gedong-sawala-nusantara",
             category: "Long-span Architecture | Academic",
-            description: "An academic project exploring long-span architectural concepts for a large public gathering space.",
+            description: "Gedong Sawala Nusantara is a performing arts hall that features 70 meters span supported by steel truss and pyramidal folded system. This building comes with retail area on the 1st floor and performing hall on the 2nd floor that integrates the cultural values and modern lifestyle.\n\nThe pyramidal system employs triangular folded planes, clad with aluminum panels in this design to enhance both structural expression and material efficiency. Yoshimura pattern or diamond pattern is used as the concept of the folded system of this project",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608334/RENDER_EKSTERIOR_2_ve3iv2.png",
             hint: "modern architecture public",
             gallery: [
