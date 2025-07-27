@@ -150,7 +150,9 @@ export const projectsData = {
             hint: "house facade modern",
             status: "Finished",
             gallery: [
-                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608033/20250725_172902_pqj0uk.jpg"
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608033/20250725_172902_pqj0uk.jpg",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753612336/PLAFOND_TERAS_WPC_DUMA_j90srq.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753612330/20250725_172802_zry8sx.jpg"
             ]
         },
         {
