@@ -22,6 +22,7 @@ export default function ProjectPage() {
   
   const [selectedImage, setSelectedImage] = useState(project?.image);
   const [isImageLoading, setIsImageLoading] = useState(true);
+  const [isPopupImageLoading, setIsPopupImageLoading] = useState(true);
 
   if (!project) {
     // A simple not found would be better here, but for now we'll just return null
@@ -32,6 +33,7 @@ export default function ProjectPage() {
 
   const handleImageSelect = (imgUrl: string) => {
     setIsImageLoading(true);
+    setIsPopupImageLoading(true);
     setSelectedImage(imgUrl);
   }
 
@@ -66,19 +68,30 @@ export default function ProjectPage() {
 
               <Dialog>
                 <DialogTrigger asChild>
-                  <Image
-                    src={selectedImage || project.image}
-                    width={1200}
-                    height={800}
-                    alt={project.title}
-                    className="w-full rounded-lg object-cover shadow-lg cursor-pointer"
-                    data-ai-hint={project.hint}
-                    priority
-                  />
+                  <div className="relative w-full aspect-[3/2] cursor-pointer">
+                    {isImageLoading && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10 rounded-lg">
+                          <Loader2 className="h-10 w-10 animate-spin text-primary" />
+                        </div>
+                    )}
+                    <Image
+                      src={selectedImage || project.image}
+                      fill
+                      alt={project.title}
+                      className={cn(
+                        "w-full rounded-lg object-cover shadow-lg transition-opacity duration-300",
+                        isImageLoading ? "opacity-0" : "opacity-100"
+                      )}
+                      data-ai-hint={project.hint}
+                      priority
+                      onLoad={() => setIsImageLoading(false)}
+                      onError={() => setIsImageLoading(false)}
+                    />
+                  </div>
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl p-0">
                     <div className="relative">
-                      {isImageLoading && (
+                      {isPopupImageLoading && (
                         <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
                           <Loader2 className="h-10 w-10 animate-spin text-primary" />
                         </div>
@@ -90,10 +103,10 @@ export default function ProjectPage() {
                         alt={project.title}
                         className={cn(
                           "w-full h-auto rounded-lg object-contain transition-opacity duration-300",
-                          isImageLoading ? "opacity-0" : "opacity-100"
+                          isPopupImageLoading ? "opacity-0" : "opacity-100"
                         )}
-                        onLoad={() => setIsImageLoading(false)}
-                        onError={() => setIsImageLoading(false)}
+                        onLoad={() => setIsPopupImageLoading(false)}
+                        onError={() => setIsPopupImageLoading(false)}
                       />
                     </div>
                 </DialogContent>
