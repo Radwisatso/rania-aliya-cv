@@ -148,7 +148,10 @@ export const projectsData = {
             description: "A freelance project involving the renovation and modernization of a house facade.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608035/Render_Fasad_fix_cropped_pgiczb.png",
             hint: "house facade modern",
-            status: "Finished"
+            status: "Finished",
+            gallery: [
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608033/20250725_172902_pqj0uk.jpg"
+            ]
         },
         {
             title: "House Renovation",
