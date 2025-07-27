@@ -69,6 +69,24 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               <div className="prose max-w-none text-muted-foreground md:text-lg">
                 <p>{project.description}</p>
               </div>
+
+              {project.gallery && project.gallery.length > 0 && (
+                <div className="space-y-6">
+                  <h2 className="text-3xl font-bold tracking-tight">More Images</h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {project.gallery.map((imgUrl, index) => (
+                      <Image
+                        key={index}
+                        src={imgUrl}
+                        width={600}
+                        height={400}
+                        alt={`${project.title} - image ${index + 1}`}
+                        className="w-full rounded-lg object-cover shadow-md"
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

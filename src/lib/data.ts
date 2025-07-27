@@ -132,7 +132,14 @@ export const projectsData = {
             description: "A freelance project focused on the design and planning of a modern boarding house.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607789/PERSPEKTIF_EKSTERIOR_FIX_uaa8ei.png",
             hint: "modern apartment building",
-            status: "On Construction"
+            status: "On Construction",
+            gallery: [
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607791/LANTAI_2_RENDER_yte0mp.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607782/LANTAI_2_RENDER_2_n5y0pg.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607782/TAMPAK_DEPAN_dlvbxb.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607782/LANTAI_1_RENDER_yzasyg.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607781/ISOMETRI_KAMAR_2_-_Copy_uy2pqw.png",
+            ]
         },
         {
             title: "House Facade Renovation",
