@@ -11,6 +11,8 @@ export function Portfolio() {
         <section id="portfolio" className="w-full py-12 md:py-24">
             <div className="container px-4 md:px-6">
                 <SectionHeading title={projectsData.title} icon={projectsData.icon} />
+            </div>
+            <div className="container px-12 md:px-16">
                 <Carousel
                     opts={{
                         align: "start",
