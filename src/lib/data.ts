@@ -190,7 +190,14 @@ export const projectsData = {
             category: "Architectural Design Studio IV | Academic",
             description: "An academic project for a Type D special needs school, focusing on accessible and inclusive architectural design.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608170/Enscape_2024-01-02-16-04-40_tlpufd.png",
-            hint: "modern school building"
+            hint: "modern school building",
+            gallery: [
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608165/Enscape_2024-01-02-16-34-21_wqay7l.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608164/poster_6_bi5y2v.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608157/interior_s8ghvf.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608156/poster_8_kr5zut.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608155/poster_7_okd24r.png"
+            ]
         },
         {
             title: "Gedong Sawala Nusantara",
