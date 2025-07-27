@@ -12,7 +12,7 @@ CONTACT
 - Phone: +62895346305922
 - Email: raniaaliya04@gmail.com
 - Location: Tangerang, Indonesia
-- LinkedIn: linkedin.com/in/rania-aliyaputri
+- LinkedIn: linkedin.com/in/rania-aliya
 
 SUMMARY
 Recent graduate with a Bachelor of Education in Architectural Engineering Education from Universitas Pendidikan Indonesia, equipped with solid academic training in architectural design and building technologies. Seeking to leverage advanced skills in architectural software and hands-on internship experience to contribute to the design and implementation of innovative architectural projects.
@@ -49,7 +49,7 @@ SKILLS
     { icon: Phone, text: "+62895346305922", href: "tel:+62895346305922" },
     { icon: Mail, text: "raniaaliya04@gmail.com", href: "mailto:raniaaliya04@gmail.com" },
     { icon: MapPin, text: "Tangerang, Indonesia", href: "#" },
-    { icon: Linkedin, text: "linkedin.com/in/rania-aliyaputri", href: "https://linkedin.com/in/rania-aliyaputri", target: "_blank" },
+    { icon: Linkedin, text: "linkedin.com/in/rania-aliya", href: "https://www.linkedin.com/in/rania-aliya/", target: "_blank" },
   ],
 };
 
@@ -219,6 +219,6 @@ export const projectsData = {
 export const footerData = {
   copyright: `© ${new Date().getFullYear()} Rania Aliyaputri Santoso. All Rights Reserved.`,
   socials: [
-      { name: "LinkedIn", href: "https://linkedin.com/in/rania-aliyaputri", icon: Linkedin },
+      { name: "LinkedIn", href: "https://www.linkedin.com/in/rania-aliya/", icon: Linkedin },
   ]
 }
