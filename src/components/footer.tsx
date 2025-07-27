@@ -4,7 +4,7 @@ import { footerData } from "@/lib/data";
 
 export function Footer() {
     return (
-        <footer className="border-t bg-background">
+        <footer className="w-full border-t bg-background">
             <div className="container flex flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row md:px-6">
                 <p className="text-sm text-muted-foreground">{footerData.copyright}</p>
                 <div className="flex items-center gap-2">
