@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { notFound, useParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "@/lib/data";
@@ -15,14 +15,6 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 
-// This function is commented out because this is now a client component.
-// We will rely on client-side rendering for project pages.
-// export async function generateStaticParams() {
-//   return projectsData.projects.map((project) => ({
-//     slug: project.slug,
-//   }));
-// }
-
 export default function ProjectPage() {
   const params = useParams();
   const slug = typeof params.slug === 'string' ? params.slug : '';
@@ -32,10 +24,16 @@ export default function ProjectPage() {
   const [isImageLoading, setIsImageLoading] = useState(true);
 
   if (!project) {
-    notFound();
+    // A simple not found would be better here, but for now we'll just return null
+    return null;
   }
 
   const allImages = [project.image, ...(project.gallery || [])];
+
+  const handleImageSelect = (imgUrl: string) => {
+    setIsImageLoading(true);
+    setSelectedImage(imgUrl);
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -66,7 +64,7 @@ export default function ProjectPage() {
                 </div>
               </div>
 
-              <Dialog onOpenChange={(open) => !open && setIsImageLoading(true)}>
+              <Dialog>
                 <DialogTrigger asChild>
                   <Image
                     src={selectedImage || project.image}
@@ -79,23 +77,25 @@ export default function ProjectPage() {
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl p-0">
-                    {isImageLoading && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-background/50 z-10">
-                        <Loader2 className="h-10 w-10 animate-spin text-primary" />
-                      </div>
-                    )}
-                    <Image
-                      src={selectedImage || project.image}
-                      width={1200}
-                      height={800}
-                      alt={project.title}
-                      className={cn(
-                        "w-full h-auto rounded-lg object-contain transition-opacity duration-300",
-                        isImageLoading ? "opacity-0" : "opacity-100"
+                    <div className="relative">
+                      {isImageLoading && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
+                          <Loader2 className="h-10 w-10 animate-spin text-primary" />
+                        </div>
                       )}
-                      onLoad={() => setIsImageLoading(false)}
-                      onError={() => setIsImageLoading(false)}
-                    />
+                      <Image
+                        src={selectedImage || project.image}
+                        width={1200}
+                        height={800}
+                        alt={project.title}
+                        className={cn(
+                          "w-full h-auto rounded-lg object-contain transition-opacity duration-300",
+                          isImageLoading ? "opacity-0" : "opacity-100"
+                        )}
+                        onLoad={() => setIsImageLoading(false)}
+                        onError={() => setIsImageLoading(false)}
+                      />
+                    </div>
                 </DialogContent>
               </Dialog>
 
@@ -111,7 +111,7 @@ export default function ProjectPage() {
                             <CarouselItem key={index} className="basis-1/3 sm:basis-1/4 md:basis-1/5">
                                 <div
                                     className="p-1 cursor-pointer"
-                                    onClick={() => setSelectedImage(imgUrl)}
+                                    onClick={() => handleImageSelect(imgUrl)}
                                 >
                                     <Image
                                         src={imgUrl}
