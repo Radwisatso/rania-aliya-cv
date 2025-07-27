@@ -129,7 +129,7 @@ export const projectsData = {
             title: "Boarding House",
             category: "Freelance Project",
             description: "A freelance project focused on the design and planning of a modern boarding house.",
-            image: "https://placehold.co/600x400.png",
+            image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607789/PERSPEKTIF_EKSTERIOR_FIX_uaa8ei.png",
             hint: "modern apartment building"
         },
         {
