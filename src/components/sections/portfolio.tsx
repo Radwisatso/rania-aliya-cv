@@ -18,10 +18,10 @@ export function Portfolio() {
                     }}
                     className="w-full"
                 >
-                    <CarouselContent>
+                    <CarouselContent className="-ml-4">
                         {projectsData.projects.map((project, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                                <Link href={`/portfolio/${project.slug}`} className="block p-1 h-full">
+                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
+                                <Link href={`/portfolio/${project.slug}`} className="block h-full">
                                     <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                                         <CardContent className="p-0 relative">
                                             <Image
