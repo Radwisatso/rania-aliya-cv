@@ -146,32 +146,28 @@ export const projectsData = {
             category: "Freelance Project",
             description: "A comprehensive freelance renovation project for a residential house.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608415/RENDER_TAMPAK_DEPAN_dg3qmi.png",
-            hint: "interior design living room",
-            status: "Finished"
+            hint: "interior design living room"
         },
         {
             title: "Japandi House Interior",
             category: "Interior and Furniture Design | Academic",
             description: "An academic project exploring Japandi design principles for a house interior, focusing on minimalism and natural elements.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608505/R._KELUARGA_JAPANDI_ru8yzm.png",
-            hint: "minimalist interior design",
-            status: "Finished"
+            hint: "minimalist interior design"
         },
         {
             title: "Educational Building of Special Needs School",
             category: "Architectural Design Studio IV | Academic",
             description: "An academic project for a Type D special needs school, focusing on accessible and inclusive architectural design.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608170/Enscape_2024-01-02-16-04-40_tlpufd.png",
-            hint: "modern school building",
-            status: "Finished"
+            hint: "modern school building"
         },
         {
             title: "Gedong Sawala Nusantara",
             category: "Long-span Architecture | Academic",
             description: "An academic project exploring long-span architectural concepts for a large public gathering space.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608334/RENDER_EKSTERIOR_2_ve3iv2.png",
-            hint: "modern architecture public",
-            status: "Finished"
+            hint: "modern architecture public"
         }
     ]
 }
