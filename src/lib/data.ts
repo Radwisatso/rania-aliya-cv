@@ -170,7 +170,19 @@ export const projectsData = {
             category: "Interior and Furniture Design | Academic",
             description: "An academic project exploring Japandi design principles for a house interior, focusing on minimalism and natural elements.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608505/R._KELUARGA_JAPANDI_ru8yzm.png",
-            hint: "minimalist interior design"
+            hint: "minimalist interior design",
+            gallery: [
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608525/PERSPEKTIF_DAPUR_iogtd2.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608523/PERSPEKTIF_RUANG_KERJA_rn4olz.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608520/PERSPEKTIF_RUANG_MAKAN_vlhuto.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608517/PERSPEKTIF_KAMAR_MANDI_hpl6d4.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608517/PERSPEKTIF_RUANG_TIDUR_2_asahnm.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608511/R._TAMU_JAPANDI_jzs1gl.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608508/R._MAKAN_JAPANDI_a0qryn.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608496/Taman_Depan_Render_jwm3bs.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608495/Taman_Belakang_Render_esjp7n.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608494/Jendela_Render_ugettl.png"
+            ]
         },
         {
             title: "Educational Building of Special Needs School",
