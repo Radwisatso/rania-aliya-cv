@@ -14,9 +14,9 @@ export default function Home() {
       <main className="flex w-full flex-1 flex-col">
         <Hero />
         <Experience />
-        <Education />
-        <Skills />
         <Portfolio />
+        <Skills />
+        <Education />
         <CoverLetterGenerator />
       </main>
       <Footer />
