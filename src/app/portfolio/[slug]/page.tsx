@@ -32,6 +32,9 @@ export default function ProjectPage() {
   const allImages = [project.image, ...(project.gallery || [])];
 
   const handleImageSelect = (imgUrl: string) => {
+    if (imgUrl === selectedImage) {
+        return;
+    }
     setIsImageLoading(true);
     setIsPopupImageLoading(true);
     setSelectedImage(imgUrl);
