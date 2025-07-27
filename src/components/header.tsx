@@ -22,7 +22,7 @@ export function Header() {
             <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-6">
                 <Link href="/" className="flex items-center gap-2 font-bold">
                     <Mountain className="h-6 w-6" />
-                    <span className="text-lg">Archfolio</span>
+                    <span className="text-lg">Rania A. Santoso</span>
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -35,7 +35,7 @@ export function Header() {
 
                 <div className="hidden md:flex items-center gap-4">
                     <Button asChild>
-                        <a href="/alexandre-wright-cv.pdf" download>
+                        <a href="/rania-aliyaputri-santoso-cv.pdf" download>
                             <Download className="mr-2 h-4 w-4" />
                             Download CV
                         </a>
@@ -54,7 +54,7 @@ export function Header() {
                             <div className="flex flex-col gap-6 p-6">
                                 <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setMobileMenuOpen(false)}>
                                     <Mountain className="h-6 w-6" />
-                                    <span className="text-lg">Archfolio</span>
+                                    <span className="text-lg">Rania A. Santoso</span>
                                 </Link>
                                 <nav className="grid gap-4 text-lg font-medium">
                                     {navLinks.map((link) => (
@@ -64,7 +64,7 @@ export function Header() {
                                     ))}
                                 </nav>
                                 <Button asChild className="mt-4">
-                                    <a href="/alexandre-wright-cv.pdf" download>
+                                    <a href="/rania-aliyaputri-santoso-cv.pdf" download>
                                         <Download className="mr-2 h-4 w-4" />
                                         Download CV
                                     </a>

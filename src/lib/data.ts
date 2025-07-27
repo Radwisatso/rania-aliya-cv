@@ -1,59 +1,55 @@
-import { Award, Briefcase, GraduationCap, Code, Construction, Languages, Linkedin, Mail, MapPin, Phone, Palette, Star } from "lucide-react";
+import { Award, Briefcase, GraduationCap, Code, Palette, Star, Linkedin, Mail, MapPin, Phone, Building, Home, Paintbrush, School, FileText } from "lucide-react";
 
 export const personalInfo = {
-  name: "Alexandre Wright",
-  title: "Architect & Urban Designer",
-  introduction: "A passionate and innovative architect with a flair for sustainable design and urban planning. With over a decade of experience, I transform concepts into tangible, human-centric spaces that inspire and endure.",
+  name: "Rania Aliyaputri Santoso",
+  title: "Architectural Engineering Graduate",
+  introduction: "Recent graduate with a Bachelor of Education in Architectural Engineering Education from Universitas Pendidikan Indonesia, equipped with solid academic training in architectural design and building technologies. Seeking to leverage advanced skills in architectural software and hands-on internship experience to contribute to the design and implementation of innovative architectural projects.",
   cv_text: `
-Alexandre Wright
-Architect & Urban Designer
+Rania Aliyaputri Santoso
+Architectural Engineering Graduate
 
 CONTACT
-- Phone: +1 (123) 456-7890
-- Email: alexandre.wright@email.com
-- Location: New York, NY
-- LinkedIn: linkedin.com/in/alexandrewright
+- Phone: +62895346305922
+- Email: raniaaliya04@gmail.com
+- Location: Tangerang, Indonesia
+- LinkedIn: linkedin.com/in/rania-aliyaputri
 
 SUMMARY
-A passionate and innovative architect with over 10 years of experience in sustainable design and urban planning. Proven ability to lead projects from conception to completion, delivering high-quality, impactful architectural solutions.
+Recent graduate with a Bachelor of Education in Architectural Engineering Education from Universitas Pendidikan Indonesia, equipped with solid academic training in architectural design and building technologies. Seeking to leverage advanced skills in architectural software and hands-on internship experience to contribute to the design and implementation of innovative architectural projects.
 
-EXPERIENCE
+PROFESSIONAL EXPERIENCE
 
-Senior Architect | UrbanScape Architects, New York, NY | 2018 - Present
-- Led the design and development of major mixed-use urban renewal projects.
-- Managed a team of 5 junior architects, providing mentorship and guidance.
-- Key Projects: 'Greenwood Plaza' - a 50-story sustainable residential tower.
-
-Architect | Horizon Designs, San Francisco, CA | 2014 - 2018
-- Designed and executed commercial and residential projects.
-- Specialized in parametric design and digital fabrication techniques.
-- Project: 'The Wave' - an award-winning coastal community center.
-
-Junior Architect | Genesis Firm, Chicago, IL | 2012 - 2014
-- Assisted in schematic design, construction documentation, and 3D modeling for various projects.
+Project Supervisor Intern | PT Graha Ciptayasha, Cikarang | June - August 2024
+- Performed detailed checks on steel reinforcement and precast concrete panels for Perumahan Savasa, Panasonic Homes Deltamas - Precast Concrete Housing.
+- Conducted defect inspections and functionality checks of openings.
+- Calculated concrete volumes and managed data for precast concrete panels.
+- Performed detailed volume calculations for concrete pour phases for Mall Lippo Cikarang Extension Project.
+- Mapped project progress to optimize work schedules and resources.
+- Prepared construction drawings to guide on-site work and facilitate project execution.
+- Made adjustments to existing architectural drawings for Ignite Data Center, Cikarang.
+- Collaborated with international consultants to rectify discrepancies in shop drawings.
+- Handled simple drafting tasks to support the project’s technical requirements.
 
 EDUCATION
 
-Master of Architecture | Columbia University, New York, NY | 2012
-- Focus on Advanced Architectural Design and Urban Studies.
-
-Bachelor of Science in Architecture | University of Illinois, Urbana-Champaign | 2010
-- Graduated with High Honors.
-
-SKILLS
-- Technical: AutoCAD, Revit, Rhino 3D, SketchUp, V-Ray, Grasshopper
-- Design: Adobe Creative Suite (Photoshop, InDesign, Illustrator)
-- Other: Project Management, Sustainable Design (LEED AP), Building Codes
+Bachelor of Education in Architectural Engineering | Universitas Pendidikan Indonesia | Sept 2021 - July 2025
+- GPA: 3.82
+- Courses Include: Architectural Design Studio I-IV, Building Structures I-III, Construction Management, Environmental and Utility Building Design, Interior and Furniture Design, Site Planning, Long-span Architecture, Building Construction and Sanitation Practices, Building Information Modeling (BIM), Digital Architectural Presentation, Budget Planning, Sustainable Architecture.
 
 CERTIFICATIONS
-- Licensed Architect, State of New York
-- LEED Accredited Professional (LEED AP BD+C)
+- Construction Work Competency Certificate (SKK) - PUPR, Position: Construction Site Manager (May 2025)
+
+SKILLS
+- Architectural Software: Archicad, AutoCAD, SketchUp, Enscape, BIMx
+- Design Tools: Adobe Photoshop, Canva
+- Administration: Microsoft Office, Google Workspace
+- Personal: Strong analytical skills, Effective communicator, Passionate about sustainable practices, Fluent in Indonesian and English.
 `,
   contact: [
-    { icon: Phone, text: "+1 (123) 456-7890", href: "tel:+11234567890" },
-    { icon: Mail, text: "alexandre.wright@email.com", href: "mailto:alexandre.wright@email.com" },
-    { icon: MapPin, text: "New York, NY", href: "#" },
-    { icon: Linkedin, text: "linkedin.com/in/alexandrewright", href: "https://linkedin.com/in/alexandrewright", target: "_blank" },
+    { icon: Phone, text: "+62895346305922", href: "tel:+62895346305922" },
+    { icon: Mail, text: "raniaaliya04@gmail.com", href: "mailto:raniaaliya04@gmail.com" },
+    { icon: MapPin, text: "Tangerang, Indonesia", href: "#" },
+    { icon: Linkedin, text: "linkedin.com/in/rania-aliyaputri", href: "https://linkedin.com/in/rania-aliyaputri", target: "_blank" },
   ],
 };
 
@@ -62,41 +58,20 @@ export const experienceData = {
   icon: Briefcase,
   jobs: [
     {
-      role: "Senior Architect",
-      company: "UrbanScape Architects",
-      location: "New York, NY",
-      dates: "2018 - Present",
-      description: "Leading the design and development of major mixed-use urban renewal projects. Responsible for team management, client relations, and ensuring design excellence from concept to construction.",
+      role: "Project Supervisor Intern",
+      company: "PT Graha Ciptayasha",
+      location: "Cikarang, Indonesia",
+      dates: "June - August 2024",
+      description: "Gained hands-on experience in various projects, including precast concrete housing, a mall extension, and a data center. Responsibilities included quality control, project monitoring, and technical drafting.",
       details: [
-        "Managed a team of 5 junior architects, fostering a collaborative and innovative environment.",
-        "Spearheaded the 'Greenwood Plaza' project, a 50-story sustainable residential tower.",
-        "Implemented advanced BIM workflows, improving project efficiency by 20%.",
+        "Performed detailed checks on steel reinforcement and precast concrete panels.",
+        "Conducted defect inspections and functionality checks of openings.",
+        "Calculated concrete volumes and managed data for precast concrete panels.",
+        "Mapped project progress to optimize work schedules and resources.",
+        "Prepared construction drawings to guide on-site work.",
+        "Collaborated with international consultants to rectify discrepancies in shop drawings."
       ],
-    },
-    {
-      role: "Architect",
-      company: "Horizon Designs",
-      location: "San Francisco, CA",
-      dates: "2014 - 2018",
-      description: "Designed and executed a variety of commercial and residential projects, with a focus on integrating parametric design and digital fabrication techniques.",
-      details: [
-        "Recipient of the 'Future Forward' award for 'The Wave' community center design.",
-        "Developed complex geometries and facade systems using Rhino and Grasshopper.",
-        "Collaborated closely with engineers and contractors to ensure design integrity.",
-      ],
-    },
-    {
-      role: "Junior Architect",
-      company: "Genesis Firm",
-      location: "Chicago, IL",
-      dates: "2012 - 2014",
-      description: "Assisted senior architects in all phases of the design process, from schematic design to construction documentation and 3D modeling.",
-      details: [
-        "Contributed to the design development of several high-profile commercial buildings.",
-        "Produced detailed construction documents and renderings.",
-        "Gained foundational experience in project management and building codes.",
-      ],
-    },
+    }
   ],
 };
 
@@ -105,93 +80,99 @@ export const educationData = {
   icon: GraduationCap,
   schools: [
     {
-      degree: "Master of Architecture",
-      university: "Columbia University",
-      location: "New York, NY",
-      year: "2012",
-      details: "Focused on Advanced Architectural Design, Urban Studies, and Digital Fabrication. Thesis project explored adaptive reuse in post-industrial cityscapes."
-    },
-    {
-      degree: "Bachelor of Science in Architecture",
-      university: "University of Illinois, Urbana-Champaign",
-      location: "Urbana-Champaign, IL",
-      year: "2010",
-      details: "Graduated with High Honors. Study abroad program in Rome, focusing on classical architecture and urbanism."
+      degree: "Bachelor of Education in Architectural Engineering",
+      university: "Universitas Pendidikan Indonesia",
+      location: "GPA 3.82",
+      year: "2021 - 2025",
+      details: "Relevant Courses: Architectural Design Studio I-IV, Building Structures I-III, Construction Management, BIM, Sustainable Architecture."
     },
   ],
 };
 
 export const skillsData = {
-    title: "Skills & Certifications",
+    title: "Skills & Attributes",
     icon: Star,
     categories: [
         {
-            name: "Software Expertise",
+            name: "Architectural Software",
             icon: Code,
-            skills: ["AutoCAD", "Revit", "Rhino 3D", "SketchUp", "Grasshopper", "V-Ray", "Lumion"]
+            skills: ["Archicad", "AutoCAD", "SketchUp", "Enscape", "BIMx"]
         },
         {
-            name: "Design & Visualization",
+            name: "Design Tools",
             icon: Palette,
-            skills: ["Adobe Creative Suite", "Parametric Design", "3D Modeling", "Architectural Rendering", "Hand Sketching"]
+            skills: ["Adobe Photoshop", "Canva"]
         },
         {
-            name: "Professional Skills",
-            icon: Construction,
-            skills: ["Project Management", "Sustainable Design", "Building Codes", "Construction Documentation", "Client Communication"]
+            name: "Personal Attributes",
+            icon: Star,
+            skills: ["Strong Analytical Skills", "Effective Communicator", "Sustainable Practices", "Innovative", "Fluent in Indonesian & English"]
         },
         {
             name: "Certifications",
             icon: Award,
-            skills: ["Licensed Architect, NY", "LEED AP BD+C"]
+            skills: ["Construction Work Competency (SKK) - Site Manager"]
         },
         {
-            name: "Languages",
-            icon: Languages,
-            skills: ["English (Native)", "French (Professional)"]
+            name: "Administration",
+            icon: FileText,
+            skills: ["Microsoft Office", "Google Workspace"]
         }
     ]
 };
 
 export const projectsData = {
     title: "Project Portfolio",
-    icon: Construction,
+    icon: Building,
     projects: [
         {
-            title: "Greenwood Plaza",
-            category: "Mixed-Use Tower",
-            description: "A 50-story sustainable residential tower in downtown New York, featuring a vertical forest and integrated community spaces.",
+            title: "Boarding House",
+            category: "Freelance Project",
+            description: "A freelance project focused on the design and planning of a modern boarding house.",
             image: "https://placehold.co/600x400.png",
-            hint: "modern skyscraper"
+            hint: "modern apartment building"
         },
         {
-            title: "The Wave Center",
-            category: "Community Building",
-            description: "An award-winning coastal community center in San Francisco, with a dynamic, wave-inspired form and public-facing amenities.",
+            title: "House Facade Renovation",
+            category: "Freelance Project",
+            description: "A freelance project involving the renovation and modernization of a house facade.",
             image: "https://placehold.co/600x400.png",
-            hint: "modern architecture"
+            hint: "house facade modern"
         },
         {
-            title: "Serenity House",
-            category: "Private Residence",
-            description: "A minimalist private residence nestled in a forest, designed to blend seamlessly with its natural surroundings.",
+            title: "House Renovation",
+            category: "Freelance Project",
+            description: "A comprehensive freelance renovation project for a residential house.",
             image: "https://placehold.co/600x400.png",
-            hint: "forest house"
+            hint: "interior design living room"
         },
         {
-            title: "Tech Hub Campus",
-            category: "Commercial Office",
-            description: "A sprawling campus for a tech giant, designed to foster innovation and collaboration with flexible workspaces and green rooftops.",
+            title: "Japandi House Interior",
+            category: "Interior and Furniture Design | Academic",
+            description: "An academic project exploring Japandi design principles for a house interior, focusing on minimalism and natural elements.",
             image: "https://placehold.co/600x400.png",
-            hint: "modern office"
+            hint: "minimalist interior design"
+        },
+        {
+            title: "Educational Building of Special Needs School",
+            category: "Architectural Design Studio IV | Academic",
+            description: "An academic project for a Type D special needs school, focusing on accessible and inclusive architectural design.",
+            image: "https://placehold.co/600x400.png",
+            hint: "modern school building"
+        },
+        {
+            title: "Gedong Sawala Nusantara",
+            category: "Long-span Architecture | Academic",
+            description: "An academic project exploring long-span architectural concepts for a large public gathering space.",
+            image: "https://placehold.co/600x400.png",
+            hint: "modern architecture public"
         }
     ]
 }
 
 export const footerData = {
-  copyright: `© ${new Date().getFullYear()} Alexandre Wright. All Rights Reserved.`,
+  copyright: `© ${new Date().getFullYear()} Rania Aliyaputri Santoso. All Rights Reserved.`,
   socials: [
-      { name: "LinkedIn", href: "https://linkedin.com/in/alexandrewright", icon: Linkedin },
-      // Add other social links here if needed
+      { name: "LinkedIn", href: "https://linkedin.com/in/rania-aliyaputri", icon: Linkedin },
   ]
 }

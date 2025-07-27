@@ -74,7 +74,7 @@ export function CoverLetterGenerator() {
           <CardHeader>
             <CardTitle>Generate a Custom Cover Letter</CardTitle>
             <CardDescription>
-              Paste a job description below, and our AI will craft a tailored cover letter based on Alexandre's CV.
+              Paste a job description below, and our AI will craft a tailored cover letter based on Rania's CV.
             </CardDescription>
           </CardHeader>
           <CardContent>

@@ -40,7 +40,7 @@ export function Hero() {
                             src="https://placehold.co/600x600.png"
                             width={600}
                             height={600}
-                            alt="Alexandre Wright"
+                            alt="Rania Aliyaputri Santoso"
                             className="h-auto w-full max-w-sm rounded-full object-cover aspect-square shadow-lg"
                             data-ai-hint="professional architect portrait"
                         />

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Archfolio',
-  description: 'A personal portfolio for Alexandre Wright, Architect & Urban Designer.',
+  title: 'Rania Aliyaputri Santoso',
+  description: 'A personal portfolio for Rania Aliyaputri Santoso, Architectural Engineering Graduate.',
 };
 
 export default function RootLayout({
