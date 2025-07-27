@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "@/lib/data";
@@ -14,12 +14,6 @@ import { ArrowLeft } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
-type ProjectPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
 // This function is commented out because this is now a client component.
 // We will rely on client-side rendering for project pages.
 // export async function generateStaticParams() {
@@ -28,8 +22,9 @@ type ProjectPageProps = {
 //   }));
 // }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+export default function ProjectPage() {
+  const params = useParams();
+  const slug = typeof params.slug === 'string' ? params.slug : '';
   const project = projectsData.projects.find((p) => p.slug === slug);
   
   const [selectedImage, setSelectedImage] = useState(project?.image);
