@@ -1,9 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import { personalInfo } from "@/lib/data";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+import React, { useState } from "react";
+import { Button } from "../ui/button";
 
 export function Hero() {
+    const [isPhoneVisible, setIsPhoneVisible] = useState(false);
+
+    const togglePhoneVisibility = () => {
+        setIsPhoneVisible(!isPhoneVisible);
+    };
+
     return (
         <section id="home" className="w-full py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
@@ -26,9 +36,21 @@ export function Hero() {
                                     {personalInfo.contact.map((item, index) => (
                                         <div key={index} className="flex items-center gap-3">
                                             <item.icon className="h-5 w-5 text-accent" />
-                                            <Link href={item.href} target={item.target} className="text-sm hover:underline" rel="noopener noreferrer">
-                                                {item.text}
-                                            </Link>
+                                            {item.type === 'phone' ? (
+                                                isPhoneVisible ? (
+                                                    <Link href={item.href} className="text-sm hover:underline">
+                                                        {item.text}
+                                                    </Link>
+                                                ) : (
+                                                    <Button variant="link" className="p-0 h-auto text-sm" onClick={togglePhoneVisibility}>
+                                                        Click to view
+                                                    </Button>
+                                                )
+                                            ) : (
+                                                <Link href={item.href} target={item.target} className="text-sm hover:underline" rel="noopener noreferrer">
+                                                    {item.text}
+                                                </Link>
+                                            )}
                                         </div>
                                     ))}
                                 </div>

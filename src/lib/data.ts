@@ -46,10 +46,10 @@ SKILLS
 - Personal: Strong analytical skills, Effective communicator, Passionate about sustainable practices, Fluent in Indonesian and English.
 `,
   contact: [
-    { icon: Phone, text: "+62895346305922", href: "tel:+62895346305922" },
-    { icon: Mail, text: "raniaaliya04@gmail.com", href: "mailto:raniaaliya04@gmail.com" },
-    { icon: MapPin, text: "Tangerang, Indonesia", href: "#" },
-    { icon: Linkedin, text: "linkedin.com/in/rania-aliya", href: "https://www.linkedin.com/in/rania-aliya/", target: "_blank" },
+    { type: 'phone', icon: Phone, text: "+62895346305922", href: "tel:+62895346305922" },
+    { type: 'email', icon: Mail, text: "raniaaliya04@gmail.com", href: "mailto:raniaaliya04@gmail.com" },
+    { type: 'location', icon: MapPin, text: "Tangerang, Indonesia", href: "#" },
+    { type: 'linkedin', icon: Linkedin, text: "linkedin.com/in/rania-aliya", href: "https://www.linkedin.com/in/rania-aliya/", target: "_blank" },
   ],
 };
 
