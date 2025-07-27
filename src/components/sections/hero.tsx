@@ -37,7 +37,7 @@ export function Hero() {
                     </div>
                     <div className="flex items-center justify-center">
                         <Image
-                            src="https://placehold.co/600x600.png"
+                            src="https://res.cloudinary.com/dpkmslkmk/image/upload/v1753609639/1000692745_yy8ekp.jpg"
                             width={600}
                             height={600}
                             alt="Rania Aliyaputri Santoso"
