@@ -159,7 +159,10 @@ export const projectsData = {
             category: "Freelance Project",
             description: "A comprehensive freelance renovation project for a residential house.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608415/RENDER_TAMPAK_DEPAN_dg3qmi.png",
-            hint: "interior design living room"
+            hint: "interior design living room",
+            gallery: [
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608407/RENDER_PERSPEKTIF_EKSTERIOR_oswfaq.png"
+            ]
         },
         {
             title: "Japandi House Interior",
