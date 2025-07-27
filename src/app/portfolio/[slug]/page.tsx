@@ -11,7 +11,7 @@ import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Loader2 } from "lucide-react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 
@@ -93,6 +93,7 @@ export default function ProjectPage() {
                   </div>
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl p-0">
+                    <DialogTitle className="sr-only">{project.title}</DialogTitle>
                     <div className="relative">
                       {isPopupImageLoading && (
                         <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
