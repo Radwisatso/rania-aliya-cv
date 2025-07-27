@@ -1,16 +1,19 @@
+
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Download, Menu, Mountain } from 'lucide-react';
+import { Download, Menu, Mountain, ChevronDown } from 'lucide-react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { projectsData } from '@/lib/data';
 
 const navLinks = [
     { name: 'Home', href: '/#home' },
     { name: 'Experience', href: '/#experience' },
     { name: 'Education', href: '/#education' },
     { name: 'Skills', href: '/#skills' },
-    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Portfolio', href: '/#portfolio', isDropdown: true },
     { name: 'AI Tool', href: '/#ai-tool' },
 ];
 
@@ -27,9 +30,25 @@ export function Header() {
 
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
                     {navLinks.map((link) => (
-                        <Link key={link.name} href={link.href} className="transition-colors hover:text-foreground/80 text-foreground/60">
-                            {link.name}
-                        </Link>
+                        link.isDropdown ? (
+                            <DropdownMenu key={link.name}>
+                                <DropdownMenuTrigger className="flex items-center gap-1 transition-colors hover:text-foreground/80 text-foreground/60 focus:outline-none">
+                                    {link.name}
+                                    <ChevronDown className="h-4 w-4" />
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent>
+                                    {projectsData.projects.map((project) => (
+                                        <DropdownMenuItem key={project.slug} asChild>
+                                            <Link href={`/portfolio/${project.slug}`}>{project.title}</Link>
+                                        </DropdownMenuItem>
+                                    ))}
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        ) : (
+                            <Link key={link.name} href={link.href} className="transition-colors hover:text-foreground/80 text-foreground/60">
+                                {link.name}
+                            </Link>
+                        )
                     ))}
                 </nav>
 
@@ -57,11 +76,29 @@ export function Header() {
                                     <span className="text-lg">Rania A. Santoso</span>
                                 </Link>
                                 <nav className="grid gap-4 text-lg font-medium">
-                                    {navLinks.map((link) => (
-                                        <Link key={link.name} href={link.href} className="transition-colors hover:text-foreground/80 text-foreground/60" onClick={() => setMobileMenuOpen(false)}>
-                                            {link.name}
-                                        </Link>
-                                    ))}
+                                    {navLinks.map((link) => {
+                                        if (link.isDropdown) {
+                                            return (
+                                                <div key={link.name}>
+                                                    <Link href={link.href} className="transition-colors hover:text-foreground/80 text-foreground/60" onClick={() => setMobileMenuOpen(false)}>
+                                                        {link.name}
+                                                    </Link>
+                                                    <div className="pl-4 mt-2 grid gap-2">
+                                                        {projectsData.projects.map((project) => (
+                                                            <Link key={project.slug} href={`/portfolio/${project.slug}`} className="text-sm transition-colors hover:text-foreground/80 text-foreground/60" onClick={() => setMobileMenuOpen(false)}>
+                                                                {project.title}
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                        return (
+                                            <Link key={link.name} href={link.href} className="transition-colors hover:text-foreground/80 text-foreground/60" onClick={() => setMobileMenuOpen(false)}>
+                                                {link.name}
+                                            </Link>
+                                        )
+                                    })}
                                 </nav>
                                 <Button asChild className="mt-4">
                                     <a href="/rania-aliyaputri-santoso-cv.pdf" download>
