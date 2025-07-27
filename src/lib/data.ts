@@ -127,6 +127,7 @@ export const projectsData = {
     projects: [
         {
             title: "Boarding House",
+            slug: "boarding-house",
             category: "Freelance Project",
             description: "A freelance project focused on the design and planning of a modern boarding house.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753607789/PERSPEKTIF_EKSTERIOR_FIX_uaa8ei.png",
@@ -135,6 +136,7 @@ export const projectsData = {
         },
         {
             title: "House Facade Renovation",
+            slug: "house-facade-renovation",
             category: "Freelance Project",
             description: "A freelance project involving the renovation and modernization of a house facade.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608035/Render_Fasad_fix_cropped_pgiczb.png",
@@ -143,6 +145,7 @@ export const projectsData = {
         },
         {
             title: "House Renovation",
+            slug: "house-renovation",
             category: "Freelance Project",
             description: "A comprehensive freelance renovation project for a residential house.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608415/RENDER_TAMPAK_DEPAN_dg3qmi.png",
@@ -150,6 +153,7 @@ export const projectsData = {
         },
         {
             title: "Japandi House Interior",
+            slug: "japandi-house-interior",
             category: "Interior and Furniture Design | Academic",
             description: "An academic project exploring Japandi design principles for a house interior, focusing on minimalism and natural elements.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608505/R._KELUARGA_JAPANDI_ru8yzm.png",
@@ -157,6 +161,7 @@ export const projectsData = {
         },
         {
             title: "Educational Building of Special Needs School",
+            slug: "educational-building-of-special-needs-school",
             category: "Architectural Design Studio IV | Academic",
             description: "An academic project for a Type D special needs school, focusing on accessible and inclusive architectural design.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608170/Enscape_2024-01-02-16-04-40_tlpufd.png",
@@ -164,6 +169,7 @@ export const projectsData = {
         },
         {
             title: "Gedong Sawala Nusantara",
+            slug: "gedong-sawala-nusantara",
             category: "Long-span Architecture | Academic",
             description: "An academic project exploring long-span architectural concepts for a large public gathering space.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608334/RENDER_EKSTERIOR_2_ve3iv2.png",

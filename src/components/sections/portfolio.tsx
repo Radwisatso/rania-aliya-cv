@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { projectsData } from "@/lib/data";
@@ -20,8 +21,8 @@ export function Portfolio() {
                     <CarouselContent>
                         {projectsData.projects.map((project, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                                <div className="p-1">
-                                    <Card className="h-full">
+                                <Link href={`/portfolio/${project.slug}`} className="block p-1 h-full">
+                                    <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                                         <CardContent className="p-0 relative">
                                             <Image
                                                 src={project.image}
@@ -32,7 +33,7 @@ export function Portfolio() {
                                                 data-ai-hint={project.hint}
                                             />
                                             {project.status && (
-                                                <Badge 
+                                                <Badge
                                                     className="absolute top-2 right-2"
                                                     variant={project.status === "On Construction" ? "destructive" : "default"}
                                                 >
@@ -43,10 +44,10 @@ export function Portfolio() {
                                         <CardHeader>
                                             <CardTitle>{project.title}</CardTitle>
                                             <CardDescription>{project.category}</CardDescription>
-                                            <p className="pt-2 text-sm text-muted-foreground">{project.description}</p>
+                                            <p className="pt-2 text-sm text-muted-foreground line-clamp-3">{project.description}</p>
                                         </CardHeader>
                                     </Card>
-                                </div>
+                                </Link>
                             </CarouselItem>
                         ))}
                     </CarouselContent>
