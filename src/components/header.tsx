@@ -1,6 +1,6 @@
 
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -11,14 +11,14 @@ import { projectsData } from '@/lib/data';
 const navLinks = [
     { name: 'Home', href: '/#home' },
     { name: 'Experience', href: '/#experience' },
-    { name: 'Education', href: '/#education' },
-    { name: 'Skills', href: '/#skills' },
     { name: 'Portfolio', href: '/#portfolio', isDropdown: true },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Education', href: '/#education' },
     { name: 'AI Tool', href: '/#ai-tool' },
 ];
 
 export function Header() {
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -40,6 +40,7 @@ export function Header() {
                                     {projectsData.projects.map((project) => (
                                         <DropdownMenuItem key={project.slug} asChild>
                                             <Link href={`/portfolio/${project.slug}`}>{project.title}</Link>
+
                                         </DropdownMenuItem>
                                     ))}
                                 </DropdownMenuContent>
