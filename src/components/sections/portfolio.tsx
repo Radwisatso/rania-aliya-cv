@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { projectsData } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
+import { Badge } from "@/components/ui/badge";
 
 export function Portfolio() {
     return (
@@ -21,7 +22,7 @@ export function Portfolio() {
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
                                     <Card className="h-full">
-                                        <CardContent className="p-0">
+                                        <CardContent className="p-0 relative">
                                             <Image
                                                 src={project.image}
                                                 width={600}
@@ -30,6 +31,14 @@ export function Portfolio() {
                                                 className="rounded-t-lg object-cover w-full aspect-[3/2]"
                                                 data-ai-hint={project.hint}
                                             />
+                                            {project.status && (
+                                                <Badge 
+                                                    className="absolute top-2 right-2"
+                                                    variant={project.status === "On Construction" ? "destructive" : "default"}
+                                                >
+                                                    {project.status}
+                                                </Badge>
+                                            )}
                                         </CardContent>
                                         <CardHeader>
                                             <CardTitle>{project.title}</CardTitle>
