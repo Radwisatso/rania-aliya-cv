@@ -6,12 +6,12 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Download, Menu, Mountain } from 'lucide-react';
 
 const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'AI Tool', href: '#ai-tool' },
+    { name: 'Home', href: '/#home' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Education', href: '/#education' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'AI Tool', href: '/#ai-tool' },
 ];
 
 export function Header() {
