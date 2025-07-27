@@ -205,7 +205,13 @@ export const projectsData = {
             category: "Long-span Architecture | Academic",
             description: "An academic project exploring long-span architectural concepts for a large public gathering space.",
             image: "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608334/RENDER_EKSTERIOR_2_ve3iv2.png",
-            hint: "modern architecture public"
+            hint: "modern architecture public",
+            gallery: [
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608344/RENDER_INTERIOR_TRIBUN_1_flmw6z.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608335/RENDER_INTERIOR_GROUND_FLOOR_ggrrux.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608334/RENDER_ATAP_pjqn4c.png",
+                "https://res.cloudinary.com/dpkmslkmk/image/upload/v1753608333/RENDER_TAMPAK_fsee5i.png"
+            ]
         }
     ]
 }
