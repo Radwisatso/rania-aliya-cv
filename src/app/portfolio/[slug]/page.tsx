@@ -10,9 +10,10 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Loader2 } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 
 // This function is commented out because this is now a client component.
 // We will rely on client-side rendering for project pages.
@@ -28,6 +29,7 @@ export default function ProjectPage() {
   const project = projectsData.projects.find((p) => p.slug === slug);
   
   const [selectedImage, setSelectedImage] = useState(project?.image);
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   if (!project) {
     notFound();
@@ -38,7 +40,7 @@ export default function ProjectPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1 py-8 md:py-12 lg:py-16">
+      <main className="flex-1 py-8 md:py-12">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl">
             <div className="mb-8">
@@ -64,7 +66,7 @@ export default function ProjectPage() {
                 </div>
               </div>
 
-              <Dialog>
+              <Dialog onOpenChange={(open) => !open && setIsImageLoading(true)}>
                 <DialogTrigger asChild>
                   <Image
                     src={selectedImage || project.image}
@@ -73,15 +75,26 @@ export default function ProjectPage() {
                     alt={project.title}
                     className="w-full rounded-lg object-cover shadow-lg cursor-pointer"
                     data-ai-hint={project.hint}
+                    priority
                   />
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl p-0">
+                    {isImageLoading && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-background/50 z-10">
+                        <Loader2 className="h-10 w-10 animate-spin text-primary" />
+                      </div>
+                    )}
                     <Image
                       src={selectedImage || project.image}
                       width={1200}
                       height={800}
                       alt={project.title}
-                      className="w-full h-auto rounded-lg object-contain"
+                      className={cn(
+                        "w-full h-auto rounded-lg object-contain transition-opacity duration-300",
+                        isImageLoading ? "opacity-0" : "opacity-100"
+                      )}
+                      onLoad={() => setIsImageLoading(false)}
+                      onError={() => setIsImageLoading(false)}
                     />
                 </DialogContent>
               </Dialog>
